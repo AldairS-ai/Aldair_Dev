@@ -1,23 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: #1e293b;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* Hero Background */
+/* Solo estilos que Tailwind no puede manejar */
 .hero-bg {
     background: linear-gradient(135deg, 
         rgba(20, 184, 166, 0.9) 0%, 
@@ -27,10 +8,6 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100 dvh;
-    position: relative;
-    isolation: isolate;
-    
 }
 
 .hero-bg::before {
@@ -42,13 +19,18 @@ body {
     z-index: -1;
 }
 
-/* Efectos especiales */
+.dark .hero-bg::before {
+    background: radial-gradient(circle at 20% 80%, rgba(20, 184, 166, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(234, 179, 8, 0.1) 0%, transparent 50%);
+}
+
 .neon-text {
     text-shadow: 0 0 10px rgba(20, 184, 166, 0.5),
                  0 0 20px rgba(20, 184, 166, 0.3),
                  0 0 30px rgba(20, 184, 166, 0.2);
 }
 
+/* Wave button effect */
 .wave-btn {
     position: relative;
     overflow: hidden;
@@ -73,7 +55,29 @@ body {
     100% { transform: scale(40, 40); opacity: 0; }
 }
 
-/* Validación de formulario */
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #14b8a6, #0d9488);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0f766e, #115e59);
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+/* Field error styles */
 .field-error {
     color: #ef4444;
     font-size: 0.875rem;
@@ -94,7 +98,7 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Toast Notifications */
+/* Toast notifications */
 .toast-container {
     position: fixed;
     top: 5rem;
@@ -149,65 +153,16 @@ body {
     border-left: 4px solid #1e40af;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f5f9;
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #14b8a6, #0d9488);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #0f766e, #115e59);
-}
-
-/* Prefers Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    *, ::before, ::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-/* Modo Oscuro */
-.dark ::-webkit-scrollbar-track {
-    background: #1e293b;
-}
-
-.dark .hero-bg::before {
-    background: radial-gradient(circle at 20% 80%, rgba(20, 184, 166, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(234, 179, 8, 0.1) 0%, transparent 50%);
+/* Checkbox personalizado */
+#privacidad {
+    accent-color: #0d9488;
 }
 
 
 
-/* Responsive Design */
+
+/* Mejoras responsive */
 @media (max-width: 768px) {
-    .mobile-tap-area {
-        min-height: 44px;
-        min-width: 44px;
-    }
-    
-    /* Asegurar que todos los botones tengan tamaño mínimo */
-    button, 
-    a[role="button"],
-    .btn,
-    .project-indicator,
-    .icon-btn {
-        min-height: 44px;
-        min-width: 44px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
     .hero-bg {
         background-attachment: scroll;
     }
@@ -225,10 +180,6 @@ body {
         left: 0.5rem;
         max-width: 100%;
     }
-    
-    .toast {
-        padding: 0.875rem 1rem;
-    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -237,7 +188,7 @@ body {
     }
 }
 
-/* Print Styles */
+/* Print styles */
 @media print {
     .hero-bg {
         background: none !important;
@@ -258,34 +209,13 @@ body {
         color: #000;
         background: #fff;
     }
-    
-    section {
-        page-break-inside: avoid;
-        margin-bottom: 1.5cm;
-    }
 }
 
-/* Accesibilidad: Mejoras de focus */
-:focus-visible {
-    outline: 3px solid rgba(20, 184, 166, 0.5);
-    outline-offset: 3px;
-    border-radius: 4px;
-}
-
-.dark :focus-visible {
-    outline-color: rgba(20, 184, 166, 0.7);
-}
-
-/* Mejora de performance para animaciones */
+/* Prefers reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    * {
+    *, ::before, ::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
     }
-}
-
-#privacidad{
-    accent-color: #0d9488;
 }
