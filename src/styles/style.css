@@ -219,3 +219,19 @@
         transition-duration: 0.01ms !important;
     }
 }
+.text-primary-600 {
+    color: #0d9488; /* WCAG AA aprobado sobre fondo blanco */
+}
+
+.dark .text-primary-400 {
+    color: #5eead4; /* Más claro para modo oscuro */
+}
+
+/* Para texto sobre fondos claros: */
+.text-primary-700 {
+    color: #0f766e;
+}
+
+.dark .text-primary-300 {
+    color: #99f6e4;
+}
