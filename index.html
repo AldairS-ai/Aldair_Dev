@@ -91,12 +91,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
+    
     <!-- Preload de la imagen hero (LCP) -->
     <link rel="preload" as="image" href="./public/img/background-hero.webp" 
           fetchpriority="high" 
           imagesrcset="./public/img/background-hero.webp"
           imagesizes="100vw">
+    
+    
     
     <!-- Tailwind CSS PRIMERO (síncrono pero necesario) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -330,14 +332,14 @@
                                        width="500" height="600" loading="lazy">                            
                                 </div>
                                 
-                                <div class="absolute -bottom-3 -right-3 bg-primary-100 dark:bg-primary-900 px-4 py-3 rounded-xl shadow-xl">                              
-                                    <a href="./public/docs/CV_Aldair_Sarmiento.pdf"                                
-                                    class="flex items-center gap-3" 
-                                    aria-label="Descargar currículum"
-                                    download="CV_Aldair_Sarmiento.pdf">                                
-                                    <span class="text-xs font-semibold text-primary-600 dark:text-primary-400">Descargar CV</span>
-                                    <i class="fas fa-download text-primary-600 dark:text-primary-400 text-xs"></i>                                                                
-                                    </a>        
+                                <div class="absolute -bottom-3 -right-3 bg-primary-100 dark:bg-primary-900 px-4 py-3 rounded-xl shadow-xl">
+                                     <a href="./public/docs/CV_Aldair_Sarmiento.pdf"
+                                         class="flex items-center gap-3"
+                                         aria-label="Descargar currículum"
+                                         download="CV_Aldair_Sarmiento.pdf">
+                                         <span class="text-xs font-semibold text-primary-800 dark:text-primary-200">Descargar CV</span>
+                                         <i class="fas fa-download text-primary-800 dark:text-primary-200 text-xs"></i>
+                                     </a>
                                 </div>
                             </div>
                         </div>
@@ -353,7 +355,7 @@
                             
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8 lg:mb-10">
                                 <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
-                                    <div class="bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 p-3 rounded-xl flex-shrink-0">
+                                    <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0">
                                         <i class="fas fa-lightbulb text-xl"></i>
                                     </div>
                                     <div>
@@ -363,7 +365,7 @@
                                 </div>
                                 
                                 <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
-                                    <div class="bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 p-3 rounded-xl flex-shrink-0">
+                                    <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0">
                                         <i class="fas fa-users text-xl"></i>
                                     </div>
                                     <div>
@@ -373,7 +375,7 @@
                                 </div>
                                 
                                 <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
-                                    <div class="bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 p-3 rounded-xl flex-shrink-0">
+                                    <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0">
                                         <i class="fas fa-tachometer-alt text-xl"></i>
                                     </div>
                                     <div>
@@ -383,7 +385,7 @@
                                 </div>
                                 
                                 <div class="flex items-start space-x-4 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
-                                    <div class="bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-400 p-3 rounded-xl flex-shrink-0">
+                                    <div class="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 p-3 rounded-xl flex-shrink-0">
                                         <i class="fas fa-universal-access text-xl"></i>
                                     </div>
                                     <div>
@@ -393,7 +395,8 @@
                                 </div>
                             </div>
                             
-                            <a href="#contacto" class="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-800 dark:hover:text-primary-300 transition-colors group text-lg">
+  
+                            <a href="#contacto" class="inline-flex items-center text-primary-700 dark:text-primary-300 font-semibold hover:text-primary-800 dark:hover:text-primary-200 transition-colors group text-lg">
                                 <span>Hablemos sobre tu proyecto</span>
                                 <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
                             </a>
@@ -442,11 +445,11 @@
                                         <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs px-2 py-1 rounded">MySQL</span>
                                     </div>
                                     <div class="flex space-x-4 mt-auto">
-                                        <a href="#" class="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-medium flex items-center">
+                                        <a href="#" class="text-primary-700 dark:text-primary-300 hover:text-primary-800 dark:hover:text-primary-200 font-medium flex items-center">
                                             <i class="fas fa-eye mr-1"></i>
                                             <span>Demo</span>
                                         </a>
-                                        <a href="https://github.com/JhonatanMazo/infojis.git" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://github.com/JhonatanMazo/infojis.git" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
                                             <i class="fab fa-github mr-1"></i>
                                             <span>Código</span>
                                         </a>
@@ -475,11 +478,11 @@
                                         <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs px-2 py-1 rounded">API</span>
                                     </div>
                                     <div class="flex space-x-4 mt-auto">
-                                        <a href="https://aldairs-ai.github.io/NetClon/" class="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://aldairs-ai.github.io/NetClon/" class="text-primary-700 dark:text-primary-300 hover:text-primary-800 dark:hover:text-primary-200 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
                                             <i class="fas fa-eye mr-1"></i>
                                             <span>Demo</span>
                                         </a>
-                                        <a href="https://github.com/AldairS-ai/NetClon.git" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://github.com/AldairS-ai/NetClon.git" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
                                             <i class="fab fa-github mr-1"></i>
                                             <span>Código</span>
                                         </a>
@@ -508,11 +511,11 @@
                                         <span class="bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 text-xs px-2 py-1 rounded">JavaScript</span>
                                     </div>
                                     <div class="flex space-x-4 mt-auto">
-                                        <a href="https://aldairs-ai.github.io/dashboardAdministrativo-/" class="text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://aldairs-ai.github.io/dashboardAdministrativo-/" class="text-primary-700 dark:text-primary-300 hover:text-primary-800 dark:hover:text-primary-200 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
                                             <i class="fas fa-eye mr-1"></i>
                                             <span>Demo</span>
                                         </a>
-                                        <a href="https://github.com/AldairS-ai/dashboardAdministrativo-.git" class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://github.com/AldairS-ai/dashboardAdministrativo-.git" class="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200 font-medium flex items-center" target="_blank" rel="noopener noreferrer">
                                             <i class="fab fa-github mr-1"></i>
                                             <span>Código</span>
                                         </a>
@@ -524,12 +527,12 @@
                 </div>
                 
                 <!-- Controles del carrusel -->
-               <button class="absolute left-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-white dark:bg-gray-800 hover:bg-primary-50 dark:hover:bg-gray-700 text-primary-700 dark:text-primary-400 rounded-full shadow-lg transition-all hover:scale-110 flex items-center justify-center z-10 -left-6 md:-left-8"
+               <button class="absolute left-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-white dark:bg-gray-800 hover:bg-primary-50 dark:hover:bg-gray-700 text-primary-800 dark:text-primary-300 rounded-full shadow-lg transition-all hover:scale-110 flex items-center justify-center z-10 -left-6 md:-left-8"
                    id="prev-project"
                    aria-label="Proyecto anterior">
                     <i class="fas fa-chevron-left text-lg"></i>
                </button>
-               <button class="absolute right-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-white dark:bg-gray-800 hover:bg-primary-50 dark:hover:bg-gray-700 text-primary-700 dark:text-primary-400 rounded-full shadow-lg transition-all hover:scale-110 flex items-center justify-center z-10 -right-6 md:-right-8"
+               <button class="absolute right-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-white dark:bg-gray-800 hover:bg-primary-50 dark:hover:bg-gray-700 text-primary-800 dark:text-primary-300 rounded-full shadow-lg transition-all hover:scale-110 flex items-center justify-center z-10 -right-6 md:-right-8"
                    id="next-project"
                    aria-label="Siguiente proyecto">
                     <i class="fas fa-chevron-right text-lg"></i>
@@ -556,7 +559,7 @@
                 </div>
              
                 <div class="text-center mt-10">
-                    <a href="https://github.com/AldairS-ai" class="inline-flex items-center text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-800 dark:hover:text-primary-300 transition-colors group text-lg" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/AldairS-ai" class="inline-flex items-center text-primary-700 dark:text-primary-300 font-semibold hover:text-primary-800 dark:hover:text-primary-200 transition-colors group text-lg" target="_blank" rel="noopener noreferrer">
                         <span>Ver todos los proyectos</span>
                         <i class="fas fa-arrow-right ml-2 group-hover:translate-x-2 transition-transform"></i>
                     </a>
@@ -593,7 +596,8 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold text-primary-800 dark:text-gray-200">HTML5 & CSS3</span>
-                                    <span class="font-bold text-primary-600 dark:text-primary-400">90%</span>
+                                    <span class="font-bold text-primary-800 dark:text-primary-200">90%</span>
+
                                 </div>
                                 <div class="w-full bg-primary-100 dark:bg-primary-900 rounded-full h-2">
                                     <div class="bg-primary-500 dark:bg-primary-600 h-2 rounded-full" style="width: 90%"></div>
@@ -603,7 +607,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold text-primary-800 dark:text-gray-200">JavaScript</span>
-                                    <span class="font-bold text-primary-600 dark:text-primary-400">85%</span>
+                                    <span class="font-bold text-primary-800 dark:text-primary-200">85%</span>
                                 </div>
                                 <div class="w-full bg-primary-100 dark:bg-primary-900 rounded-full h-2">
                                     <div class="bg-primary-500 dark:bg-primary-600 h-2 rounded-full" style="width: 85%"></div>
@@ -613,7 +617,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold text-primary-800 dark:text-gray-200">React</span>
-                                    <span class="font-bold text-primary-600 dark:text-primary-400">80%</span>
+                                    <span class="font-bold text-primary-800 dark:text-primary-200">80%</span>
                                 </div>
                                 <div class="w-full bg-primary-100 dark:bg-primary-900 rounded-full h-2">
                                     <div class="bg-primary-500 dark:bg-primary-600 h-2 rounded-full" style="width: 80%"></div>
@@ -623,7 +627,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold text-primary-800 dark:text-gray-200">Tailwind CSS</span>
-                                    <span class="font-bold text-primary-600 dark:text-primary-400">70%</span>
+                                    <span class="font-bold text-primary-800 dark:text-primary-200">70%</span>
                                 </div>
                                 <div class="w-full bg-primary-100 dark:bg-primary-900 rounded-full h-2">
                                     <div class="bg-primary-500 dark:bg-primary-600 h-2 rounded-full" style="width: 70%"></div>
@@ -645,7 +649,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold text-primary-800 dark:text-gray-200">Python</span>
-                                    <span class="font-bold text-primary-600 dark:text-primary-400">75%</span>
+                                    <span class="font-bold text-primary-800 dark:text-primary-200">75%</span>
                                 </div>
                                 <div class="w-full bg-accent-100 dark:bg-accent-900 rounded-full h-2">
                                     <div class="bg-accent-500 dark:bg-accent-600 h-2 rounded-full" style="width: 75%"></div>
@@ -655,7 +659,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold text-primary-800 dark:text-gray-200">Flask</span>
-                                    <span class="font-bold text-primary-600 dark:text-primary-400">65%</span>
+                                    <span class="font-bold text-primary-800 dark:text-primary-200">65%</span>
                                 </div>
                                 <div class="w-full bg-accent-100 dark:bg-accent-900 rounded-full h-2">
                                     <div class="bg-accent-500 dark:bg-accent-600 h-2 rounded-full" style="width: 65%"></div>
@@ -665,7 +669,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold text-primary-800 dark:text-gray-200">PHP</span>
-                                    <span class="font-bold text-primary-600 dark:text-primary-400">60%</span>
+                                    <span class="font-bold text-primary-800 dark:text-primary-200">60%</span>
                                 </div>
                                 <div class="w-full bg-accent-100 dark:bg-accent-900 rounded-full h-2">
                                     <div class="bg-accent-500 dark:bg-accent-600 h-2 rounded-full" style="width: 60%"></div>
@@ -675,7 +679,7 @@
                             <div>
                                 <div class="flex justify-between mb-2">
                                     <span class="font-semibold text-primary-800 dark:text-gray-200">MySQL</span>
-                                    <span class="font-bold text-primary-600 dark:text-primary-400">70%</span>
+                                    <span class="font-bold text-primary-800 dark:text-primary-200">70%</span>
                                 </div>
                                 <div class="w-full bg-accent-100 dark:bg-accent-900 rounded-full h-2">
                                     <div class="bg-accent-500 dark:bg-accent-600 h-2 rounded-full" style="width: 70%"></div>
@@ -739,7 +743,7 @@
                                         </div>
                                         <div>
                                             <h4 class="font-bold text-primary-800 dark:text-white mb-1">Email</h4>
-                                            <a href="mailto:alex@frontendadventures.dev" class="text-secondary-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">alex@frontendadventures.dev</a>
+                                            <a href="mailto:aldairsarmiento157@gmail.com" class="text-secondary-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">alex@frontendadventures.dev</a>
                                         </div>
                                     </div>
                                     
